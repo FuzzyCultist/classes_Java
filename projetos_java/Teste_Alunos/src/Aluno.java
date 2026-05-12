@@ -1,22 +1,28 @@
 public class Aluno{
+  
     public String nome,matricula;
     public double nota1,nota2;
 
-    public void aluno(){
+    public Aluno(){
     }
-    public double Media(){
-        return (nota1 + nota2) / 2;
+    private double Media(){
+         return (nota1 + nota2) / 2;
+        
     }
-    public void Aprovado(){
-        if (Media() >= 6.0){
+    private String Aprovado(){
+        double resultado = Media(); 
+        if ( resultado >= 6.0){
             System.out.println("Aluno "+nome+" aprovado");
+            return "Aprovado";
         }
         else{
-            Sysem.out.println("Aluno "+nome+" Reprovado")
+            System.out.println("Aluno "+nome+" Reprovado");
+            return "Reprovado";
         }
     }
     public void Boletim(){
-        return "Nome: "+nome+" Matricula: "+matricula+" nota 1: "+nota1+" nota 2: "+nota2+" sua Média é: "+Media+" Está: "+Aprovado;
+        double resultado = Media();
+        return "Nome: "+nome+" Matricula: "+matricula+" nota 1: "+nota1+" nota 2: "+nota2+" sua Média é: "+ resultado +" Está: "+Aprovado();
     }
 
 }
