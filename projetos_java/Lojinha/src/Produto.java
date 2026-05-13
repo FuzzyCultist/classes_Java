@@ -16,7 +16,6 @@ public class Produto {
             System.out.println("Quantidade vendida do item "+nome+": " + quantidadeVendida+" unidades. Estoque atual: " + quantidade);
             return quantidadeVendida;
         } else {
-            int vendida = quantidade;
             quantidade = 0;
             System.out.println("Quantidade vendida do item "+nome+": " + quantidadeVendida+" unidades. Estoque atual: " + quantidade);
             return quantidadeVendida;
