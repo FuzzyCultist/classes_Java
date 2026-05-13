@@ -1,6 +1,7 @@
 public class App {
     public static void main(String[] args) throws Exception {
         System.out.println("Hello, World!");
+        System.out.println("-------------------------------------------------");
 
         Aluno aluno1 = new Aluno();
         aluno1.nome = "maria";
@@ -15,6 +16,7 @@ public class App {
         aluno2.nota2 = 12.90;
 
         System.out.println(aluno1.Boletim());
+        System.out.println("-------------------------------------------------");
         System.out.println(aluno2.Boletim());
 
     }
